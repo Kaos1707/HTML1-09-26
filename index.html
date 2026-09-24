@@ -2,10 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personvern</title>
+    <style>
+        body {
+            background-color: #dedede;
+            padding: 30px;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+
+        .formClass {
+            display: flex; /* gjør formen fleksibel */
+            flex-direction: column; /* setter formen under alt annet */
+            align-items: center; 
+            justify-content: center; 
+            vertical-align: middle; 
+            position: absolute; /* gjør positionen relativ til nettsiden og ikke et objekt */
+            left: 500px;
+            text-align: center;
+            background-color: gray;
+            border: 5px solid black;
+            color: white;
+            width: 250px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>
+        Personvern i sosiale medier 
+    </h1>
+    <p>
+        Har du tenkt over hvor mye informasjon du legger ut? Selv om det kan være for venne
+        er det mange <b>datameglere</b> på internettet som har tillgang til det. Å være forsiktig med
+        data du legger ut på internettet er viktig, derfor skal jeg komme med noen råd for
+        personvern på nettet.
+    </p>
+    <h4>
+        1. Tenk før du legger noe ut
+    </h4>
+    <p>
+        Alt du legger ut på internettet kan <b>kobles tilbake til deg</b>. Et bilde av område nær huset ditt?
+        Det kan bli brukt til å identifiere hvor du bor basert på andre hint. Mobilnummeret ditt, Email
+        og andre typer informasjon kan brukes for å finne ut hvem du er. Derfor, tenk deg gjennom før du
+        sender noe "uviktig info"
+    </p>
+    <h4>
+        2. Sjekk instilingene dine
+    </h4>
+    <p>
+        Mange sosiale medier har instillinger som gjør informasjonen din <b>tillgjenglig</b> til mange. For
+        eksempel, er det mange sosiale medier som har profilen din åpen for alle. Dette betyr at ikke
+        bare vennene dine kan se det du legger ut, men absolutt alle.
+    </p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLsEAU55T7WpNjicbZbmELOHVLRNDx_i5C1nsUMaCXuw&s=10" alt="">
+    <h4>
+        3. Pass på kontoen din
+    </h4>
+    <p>
+        Personlig kontoen din har mye mer personlig info en du tror. Om du betaler for noe på appen, er
+        <b>kort informasjonen</b> din lagret. Du må sørge for at ingen kommer seg inn i kontoen din. Dette kan
+        du gjøre ved å skru på two factor authentication, ha et sterk passord og ikke trykke på lenker fra
+        folk du ikke skjenner
+    </p>
+    <form class="formClass" id="eksemplarform" action="/uekisterende.html"> <!-- class= gjør det tilgjenglig ved CSS -->
+        <label for="eksemplarform">Har du noe spørsmål?</label> <!--for= kobler det til formen.-->
+        <br>
+        <input placeholder="Skriv her" type="text" width="512px">
+        <br>
+        <input type="submit">
+    </form>
+    <br>
 </body>
-</html>
